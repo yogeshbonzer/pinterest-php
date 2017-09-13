@@ -2,6 +2,7 @@
     "name": "yogeshbonzer/pinterest-php",
     "description": "PHP Wrapper for consuming the Pinterest API.",
     "license": "MIT",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Hans Ott",
