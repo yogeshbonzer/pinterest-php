@@ -23,6 +23,12 @@
         "vlucas/phpdotenv": "dev-master",
         "symfony/yaml": "2.7.5"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/yogeshbonzer/pinterest-php"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Pinterest\\": "src/Pinterest/"
