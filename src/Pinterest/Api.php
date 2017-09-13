@@ -451,8 +451,11 @@ class Api
             throw new InvalidArgumentException('The note should not be empty.');
         }
 
+        //Pinterest boardId is generated so long integer which crosses integer limit. (example boardId=314196648911734959).
+        //After converting 314196648911734959(boardId) into integer, it becomes '2147483647' which is limit of integer datatype.
+        //So the api throws "Board not found." error. To fix this need to remove typecasting.
         $params = array(
-            'board' => (int) $boardId,
+            'board' => $boardId, //(int) $boardId,    //removed typecasting here.
             'note' => (string) $note,
         );
 
