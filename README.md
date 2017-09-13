@@ -20,7 +20,7 @@ An easy-to-use wrapper for the [Pinterest API](https://developers.pinterest.com/
 Via [Composer](https://getcomposer.org/)
 
 ```bash
-$ composer require hansott/pinterest-php
+$ composer require yogeshbonzer/pinterest-php
 ```
 
 ## Usage
